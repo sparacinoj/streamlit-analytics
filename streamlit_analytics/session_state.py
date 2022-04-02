@@ -30,7 +30,7 @@ except ImportError:  # Streamlit >= 0.65.0
         import streamlit.report_thread as ReportThread
         get_script_run_ctx = ReportThread.get_report_ctx
     except ImportError:  # Streamlit >= 1.4.0
-        from streamlit.script_run_context import get_script_run_ctx
+        from streamlit.scriptrunner import get_script_run_ctx
 
 
 class SessionState(object):
